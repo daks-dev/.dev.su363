@@ -1,0 +1,28 @@
+{
+  "ic": [
+    "outline-location-on",
+    "outline-settings",
+    "round-error-outline",
+    "round-mail-outline",
+    "round-menu",
+    "round-minus",
+    "round-phone-in-talk",
+    "round-plus",
+    "round-search",
+    "round-search-off",
+    "round-touch-app",
+    "round-zoom-out-map",
+    "twotone-dark-mode",
+    "twotone-light-mode"
+  ],
+  "line-md": [
+    "alert-circle-twotone",
+    "home-simple",
+    "home-simple-twotone",
+    "moon-to-sunny-outline-loop-transition",
+    "sunny-outline-to-moon-loop-transition"
+  ],
+  "mdi": ["transfer-up"],
+  "svg-spinners": ["180-ring-with-bg", "8-dots-rotate", "clock"],
+  "wpf": ["search"]
+}

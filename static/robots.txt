@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /admin
+Disallow: /search
+Sitemap: https://su363.ru/sitemap.xml
+#

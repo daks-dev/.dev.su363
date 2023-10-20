@@ -1,0 +1,66 @@
+@import '@daks.dev/svelte.sdk/fonts/open-sans/variable';
+@import '@daks.dev/svelte.sdk/styles/tailwind';
+
+@layer base {
+  :root {
+    --navbar-height: 47px;
+  }
+
+  body {
+    @apply -lg:snap-start
+      relative bg-neutral-100
+      text-gray-800 transition-colors
+      duration-300 ease-in-out dark:bg-gray-800
+      dark:text-neutral-200;
+  }
+
+  h1 {
+    @apply md:text-4.5xl
+           text-3xl tracking-wide text-gray-500 dark:text-gray-300
+           sm:text-4xl lg:text-5xl;
+  }
+
+  h2 {
+    @apply sm:text-3.5xl lg:text-4.5xl text-3xl text-slate-800
+           dark:text-slate-500 md:text-4xl;
+  }
+
+  h3 {
+    @apply sm:text-2.5xl md:text-3.5xl text-2xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl;
+  }
+}
+
+@layer utilities {
+  .min-h-screen--navbar {
+    min-height: calc(100vh - var(--navbar-height));
+  }
+  .max-h-screen--navbar {
+    max-height: calc(100vh - var(--navbar-height));
+  }
+
+  .snap-start,
+  .snap-center {
+    scroll-margin-top: var(--navbar-height);
+  }
+
+  .title {
+    @apply after:content-null after:mt-4 after:block
+           after:h-[5px] after:w-[25vw] after:bg-cyan-600 after:dark:bg-cyan-700 sm:after:w-[20vw]
+           lg:after:w-[15vw] 2xl:after:w-[10vw];
+  }
+}
+
+main,
+[role='main'] {
+  @apply mb-4 flex flex-col;
+  padding-top: var(--navbar-height);
+}
+main > header,
+[role='main'] > header {
+  @apply mb-12 pt-4 sm:pt-5 md:mb-14
+         md:pt-8 xl:mb-16 xl:pt-12;
+}
