@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "@daks.dev/svelte.sdk": "^0.1.0",
+    "@nanostores/persistent": "^0.9.1",
     "@iconify/svelte": "^3.1.4",
     "@playwright/test": "^1.39.0",
     "@rollup/pluginutils": "^5.0.5",
@@ -41,6 +42,7 @@
     "iconify-icon": "^1.0.8",
     "js-yaml": "4.1.0",
     "jsdom": "22.1.0",
+    "nanostores": "^0.9.4",
     "postcss": "^8.4.31",
     "postcss-import": "^15.1.0",
     "svelte": "^4.2.2",
