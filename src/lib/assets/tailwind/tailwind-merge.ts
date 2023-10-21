@@ -1,7 +1,7 @@
 import { getTwMerge } from '@daks.dev/svelte.sdk/tailwind/tailwind-merge';
-import { twmerge as store } from '@daks.dev/svelte.sdk/stores/nano/index';
+import { twmerge } from '@daks.dev/svelte.sdk/stores/nano';
 
-store.set({
+twmerge.set({
   // 'text-color': [{ text: ['accent', 'brand'] }],
   // 'bg-color': [{ bg: ['accent', 'brand'] }],
   // 'border-color': [{ border: ['accent', 'brand'] }],

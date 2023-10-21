@@ -5,9 +5,17 @@ import type { UserConfig } from 'vite';
 export default {
   logLevel: 'info', // error
   plugins: [imagetools(), yaml(), sveltekit()],
+  ssr: {
+    noExternal: ['@daks.dev/svelte.sdk']
+  },
+  optimizeDeps: {
+    exclude: ['@daks.dev/svelte.sdk']
+  },
   // server: { fs: { strict: false } },
   // build: { target: 'esnext' },
-  define: { 'process.env': process.env },
+  define: {
+    'process.env': process.env
+  },
   test: {
     // globals: true,
     environment: 'jsdom',
