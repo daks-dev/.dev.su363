@@ -1,10 +1,15 @@
 import common from '@daks.dev/svelte.sdk/tailwind/presets/common';
+import { fontSans } from '@daks.dev/svelte.sdk/tailwind/font-family';
 import type { Config } from 'tailwindcss';
 
 export default {
-  content: ['./src/**/*.{html,js,jsx,ts,tsx,md,mdx,svelte}', ...common.content],
+  content: ['./src/**/*.{html,js,ts,svelte}', ...common.content],
 
-  presets: [common]
+  presets: [common],
 
-  // theme: { extend: {} }
+  theme: {
+    extend: {
+      fontFamily: fontSans()
+    }
+  }
 } satisfies Config;
