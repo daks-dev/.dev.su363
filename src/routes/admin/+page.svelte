@@ -33,7 +33,7 @@
         hover:drop-shadow-deep
         relative w-24 drop-shadow-md transition duration-300
         ease-in-out hover:scale-105 sm:w-32"
-      href="https://github.com/daks-dev/gkcck.su363"
+      href="https://github.com/daks-dev/.dev.su363"
       target="_blank">
       <img
         class="h-auto w-full"
