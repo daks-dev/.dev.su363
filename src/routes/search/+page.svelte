@@ -19,7 +19,7 @@
   </header>
 
   <YandexSearchForm
-    class="content xs:pr-[44px] mb-8 px-8 sm:pr-[52px] md:pr-[55px] lg:pr-[142px]"
+    class="content mb-8 px-8 xs:pr-[44px] sm:pr-[52px] md:pr-[55px] lg:pr-[142px]"
     reload
     reverse />
 

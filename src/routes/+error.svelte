@@ -16,13 +16,13 @@
     <h1
       class="
         w-full
-        font-mono font-bold text-[35vh] text-slate-500 dark:text-slate-500">
+        font-mono text-[35vh] font-bold text-slate-500 dark:text-slate-500">
       {$page.status}
     </h1>
     <p
       class="
-        w-full px-12 py-8
-        text-xl bg-rose-600 text-gray-200 rounded">
+        w-full rounded bg-rose-600
+        px-12 py-8 text-xl text-gray-200">
       {#if $page.error?.message}
         {$page.error.message}
       {:else}
@@ -39,9 +39,9 @@
     {/if}
     -->
   {:else}
-    <h1 class="w-full mt-auto text-4xl leading-loose">
+    <h1 class="mt-auto w-full text-4xl leading-loose">
       Похоже отсутствует подключение к интернету
     </h1>
-    <p class="w-full mb-auto">Перегрузите страницу при восстановлении соединения.</p>
+    <p class="mb-auto w-full">Перегрузите страницу при восстановлении соединения.</p>
   {/if}
 </main>

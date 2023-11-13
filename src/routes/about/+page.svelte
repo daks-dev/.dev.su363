@@ -30,10 +30,10 @@
   </header>
 
   <CarouselKit
-    class="xs:block overflow-hidde container mb-8 hidden rounded-lg drop-shadow-md"
+    class="overflow-hidde container mb-8 hidden rounded-lg drop-shadow-md xs:block"
     custom={{
       inner: {
-        caption: 'absolute right-2 top-2 left-2 text-xs text-white text-shadow text-center',
+        caption: 'text-shadow absolute left-2 right-2 top-2 text-center text-xs text-white',
         progress: '!bottom-0'
       }
     }}
@@ -46,7 +46,7 @@
     stream
     check />
 
-  <div class="content readable">
+  <div class="readable content">
     <h2 class="mb-4">Основные направления деятельности:</h2>
 
     <ul class="pl-5 -indent-4 leading-7 sm:pl-6 lg:pl-7">

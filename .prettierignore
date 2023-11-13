@@ -1,0 +1,16 @@
+node_modules/
+
+__tmp__/
+
+.svelte-kit/
+build/
+dist/
+dist-ssr/
+
+test-results/
+
+static/
+
+.master/
+
+src/lib/assets/iconify/bundles.json

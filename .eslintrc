@@ -1,0 +1,98 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2024": true
+  },
+  "plugins": ["prettier", "unicorn"],
+  "settings": {
+    "mdx/code-blocks": true,
+    "mdx/remark": true,
+    "tailwindcss": {
+      "callees": ["twMerge", "classnames", "clsx", "ctl"],
+      "config": "./tailwind.config.ts"
+    }
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": "latest"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.svelte"],
+      "extends": ["plugin:svelte/recommended"],
+      "plugins": ["svelte"],
+      "parser": "svelte-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".svelte"]
+      },
+      "rules": {
+        "no-undef": "off",
+        "svelte/no-at-html-tags": "off"
+        // "@typescript-eslint/no-explicit-any": "off"
+        // "prettier/prettier": "off"
+      }
+    },
+    {
+      "files": ["**/*.{md,mdx}"],
+      "extends": ["plugin:markdown/recommended"],
+      "plugins": ["markdown"],
+      "processor": "markdown/markdown"
+      // "rules": {}
+    },
+    {
+      "files": ["**/*.{md,mdx}/*.{js,ts,svelte}"],
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "off"
+        // "no-console": "off"
+        // "@typescript-eslint/no-explicit-any": "off"
+        // "prettier/prettier": "off"
+      }
+    },
+    {
+      "files": ["**/*.{js,cjs,mjs,ts}"],
+      "parser": "@typescript-eslint/parser"
+      // "rules": {}
+    }
+  ],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/classnames-order": [
+      "warn",
+      {
+        "callees": ["twMerge", "classnames", "clsx", "ctl"],
+        "config": "./tailwind.config.ts"
+      }
+    ]
+  },
+  "ignorePatterns": [
+    "**/.svelte-kit/",
+    "**/build/",
+    "**/dist/",
+    "**/dist-ssr/",
+    "**/static/",
+    "**/test-results/",
+    "**/.master/",
+    "**/.vscode/"
+  ]
+}

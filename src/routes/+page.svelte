@@ -71,8 +71,8 @@
       itemtype={address.itemtype}>
       <div
         class="
-          xs:hidden
-          flex w-full flex-row items-center justify-around">
+          flex
+          w-full flex-row items-center justify-around xs:hidden">
         <a
           class={button}
           href="tel://{telephone.replace(/[\s-()]/g, '')}">
@@ -90,8 +90,8 @@
       </div>
       <div
         class="
-          xs:flex hidden flex-col items-center justify-center gap-y-4 text-slate-600
-          dark:text-slate-400 lg:gap-y-5">
+          hidden flex-col items-center justify-center gap-y-4 text-slate-600 dark:text-slate-400
+          xs:flex lg:gap-y-5">
         <a
           class="
             text-2xl
@@ -130,7 +130,7 @@
   <LightboxKit
     class="
       wrapper
-      3xl:grid-cols-4 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+      gap-8 sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4"
     {sources}
     {thumbnails}
     grid

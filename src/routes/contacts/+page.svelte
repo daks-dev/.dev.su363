@@ -52,13 +52,13 @@
 
   <div
     class="
-      content xs:h-[35vmax] flex
-      h-[40vmax] grow sm:h-[30vmax] md:h-[25vmax] lg:h-auto">
+      content flex h-[40vmax]
+      grow xs:h-[35vmax] sm:h-[30vmax] md:h-[25vmax] lg:h-auto">
     <YandexMap
       class="
-        bg-waiting bg-25% sm:bg-20%
-        md:bg-10% xl:bg-5% min-h-full w-full overflow-hidden border-4 border-slate-400 bg-gray-200 bg-center
-        bg-no-repeat dark:bg-slate-200"
+        min-h-full w-full overflow-hidden
+        border-4 border-slate-400 bg-gray-200 bg-waiting bg-25% bg-center bg-no-repeat dark:bg-slate-200 sm:bg-20%
+        md:bg-10% xl:bg-5%"
       {data} />
   </div>
 </main>

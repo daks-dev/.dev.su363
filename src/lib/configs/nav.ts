@@ -5,7 +5,7 @@ const config: NavSite = {
     links: [
       {
         href: '/about',
-        label: 'О!'
+        label: 'О предприятии'
       },
       {
         href: '/contacts',

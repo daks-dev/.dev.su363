@@ -11,7 +11,9 @@ export default {
   optimizeDeps: {
     exclude: ['@daks.dev/svelte.sdk']
   },
-  // server: { fs: { strict: false } },
+  server: {
+    fs: { strict: false }
+  },
   // build: { target: 'esnext' },
   define: {
     'process.env': process.env
