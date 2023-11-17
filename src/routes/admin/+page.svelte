@@ -18,7 +18,7 @@
   {title} />
 
 <main>
-  <header class="content mb-4 flex items-center gap-8">
+  <header class="mb-4 flex items-center gap-8 wrapper-lg">
     {#if DEV}
       <h1 class="title grow">Admin</h1>
     {:else}
@@ -51,7 +51,7 @@
   </header>
 
   {#if DEV}
-    <div class="content flex">
+    <div class="flex wrapper-lg">
       <div class="flex flex-col gap-8 border-r-2 pr-8 text-2xl">
         <a
           class="button max-w-full rounded border"
@@ -73,6 +73,6 @@
       </div>
     </div>
   {:else}
-    <SvelteKitCounter class="content items-center" />
+    <SvelteKitCounter class="items-center wrapper-lg" />
   {/if}
 </main>

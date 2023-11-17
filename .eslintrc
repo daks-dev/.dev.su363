@@ -17,7 +17,7 @@
     "mdx/code-blocks": true,
     "mdx/remark": true,
     "tailwindcss": {
-      "callees": ["twMerge", "classnames", "clsx", "ctl"],
+      "callees": ["twMerge", "twJoin", "classnames", "clsx", "ctl"],
       "config": "./tailwind.config.ts"
     }
   },
@@ -76,11 +76,16 @@
         "argsIgnorePattern": "^_"
       }
     ],
-    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/no-custom-classname": [
+      "warn",
+      {
+        "whitelist": ["lazy"]
+      }
+    ],
     "tailwindcss/classnames-order": [
       "warn",
       {
-        "callees": ["twMerge", "classnames", "clsx", "ctl"],
+        "callees": ["twMerge", "twJoin", "classnames", "clsx", "ctl"],
         "config": "./tailwind.config.ts"
       }
     ]

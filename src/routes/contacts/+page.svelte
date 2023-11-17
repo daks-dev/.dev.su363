@@ -42,18 +42,18 @@
 <main
   class="grow gap-8"
   itemprop="mainContentOfPage">
-  <header class="content mb-0">
+  <header class="mb-0 wrapper-lg">
     <h1 class="title">Контакты</h1>
   </header>
 
   <Contacts
-    class="content"
+    class="wrapper-lg"
     {microdata} />
 
   <div
     class="
-      content flex h-[40vmax]
-      grow xs:h-[35vmax] sm:h-[30vmax] md:h-[25vmax] lg:h-auto">
+      flex h-[40vmax] grow
+      wrapper-lg xs:h-[35vmax] sm:h-[30vmax] md:h-[25vmax] lg:h-auto">
     <YandexMap
       class="
         min-h-full w-full overflow-hidden

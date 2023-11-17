@@ -15,7 +15,7 @@
   "embeddedLanguageFormatting": "auto",
   "tailwindConfig": "./tailwind.config.ts",
   "tailwindAttributes": ["class", "custom", "className", "ngClass"],
-  "tailwindFunctions": ["twMerge", "classnames", "clsx", "ctl"],
+  "tailwindFunctions": ["twMerge", "twJoin", "classnames", "clsx", "ctl"],
   "plugins": ["prettier-plugin-svelte", "prettier-plugin-tailwindcss"],
   "overrides": [
     {

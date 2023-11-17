@@ -13,7 +13,7 @@
   {title} />
 
 <main>
-  <header class="content">
+  <header class="wrapper-lg">
     <h1 class="title">Iconify</h1>
   </header>
 

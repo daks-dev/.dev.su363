@@ -27,8 +27,8 @@
 <main itemprop="mainContentOfPage">
   <div
     class="
-      wrapper flex
-      cursor-default flex-wrap items-start py-12"
+      flex cursor-default
+      flex-wrap items-start py-12 wrapper-xl"
     itemscope
     {itemtype}>
     <!-- style:--text-shadow-color="#222" -->
@@ -129,8 +129,8 @@
   <!-- justify-around gap-8 lg:gap-12 2xl:gap-16 -->
   <LightboxKit
     class="
-      wrapper
-      gap-8 sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4"
+      gap-8
+      wrapper-xl sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4"
     {sources}
     {thumbnails}
     grid

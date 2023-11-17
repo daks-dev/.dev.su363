@@ -1,7 +1,7 @@
-//@ts-nocheck
 import type { PageServerLoad } from './$types';
 
 export const load = (async ({ cookies }) => {
+  // @ts-ignore
   const meta = JSON.parse(cookies.get('meta', { path: '/admin' }) ?? null);
   cookies.delete('meta', { path: '/admin' });
   return {

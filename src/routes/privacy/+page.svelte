@@ -13,7 +13,7 @@
 <article
   itemprop="mainContentOfPage"
   role="main">
-  <header class="content">
+  <header class="wrapper-lg">
     <h1
       class="title"
       itemprop="name">
@@ -23,8 +23,8 @@
   </header>
 
   <div
-    class="readable content
-              text-slate-700 dark:text-slate-300">
+    class="readable text-slate-700
+              wrapper-lg dark:text-slate-300">
     <div>
       Настоящая Политика конфиденциальности персональных данных (далее &mdash; Политика
       конфиденциальности) действует в отношении всей информации, которую сайт

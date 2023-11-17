@@ -14,14 +14,14 @@
   {canonical} />
 
 <main itemprop="mainContentOfPage">
-  <header class="content">
+  <header class="wrapper-lg">
     <h1 class="title">Результаты поиска</h1>
   </header>
 
   <YandexSearchForm
-    class="content mb-8 px-8 xs:pr-[44px] sm:pr-[52px] md:pr-[55px] lg:pr-[142px]"
+    class="mb-8 px-8 wrapper-lg xs:pr-[44px] sm:pr-[52px] md:pr-[55px] lg:pr-[142px]"
     reload
     reverse />
 
-  <YandexSearchSerp class="content pr-8 lg:pr-4" />
+  <YandexSearchSerp class="pr-8 wrapper-lg lg:pr-4" />
 </main>

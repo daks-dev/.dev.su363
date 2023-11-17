@@ -21,7 +21,7 @@
 <svelte:body itemtype="https://schema.org/AboutPage" />
 
 <main itemprop="mainContentOfPage">
-  <header class="content xs:mb-12">
+  <header class="wrapper-lg xs:mb-12">
     <h1
       class="title"
       itemprop="name">
@@ -46,7 +46,7 @@
     stream
     check />
 
-  <div class="readable content">
+  <div class="readable wrapper-lg">
     <h2 class="mb-4">Основные направления деятельности:</h2>
 
     <ul class="pl-5 -indent-4 leading-7 sm:pl-6 lg:pl-7">
